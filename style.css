@@ -1,0 +1,60 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+/*NavBar*/
+
+.navBar{
+    position: absolute;
+    width: 100%;
+}
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 25px;
+    width: 70%;
+}
+.logo{
+    color: white;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+li {
+    list-style: none;
+    
+}
+li a{
+    text-decoration: none;
+    padding: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+/*Header*/
+
+header{
+    width: 100vw;
+    height: 100vh;
+    
+    
+    background-image: url(img/landscape-tree-nature-forest-rock-wilderness-5577-pxhere.com.jpg);
+    background-position: initial;
+    background-size: cover;
+}
+.header-content{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.313);
+    display: flex;    
+}
