@@ -13,3 +13,35 @@ header{
     background-position: center;
     background-size: cover;
 }
+.titulo{
+    color: white;
+    margin-bottom: 20px;
+}
+.header-content{
+    background-color: rgba(0, 0, 0, 0.46);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.caixa-frase{
+    height: 144px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.caixa-frase h3{
+    font-weight: lighter;
+    font-size: 5vmin;
+}
+
+@media (max-width: 650px) {
+    .titulo{
+        font-size: 30px;
+        text-align: center;
+    }
+}
