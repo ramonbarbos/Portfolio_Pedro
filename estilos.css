@@ -3,8 +3,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
+body{
+    overflow-x: hidden;
+}
 
 header{
     width: 100vw;
@@ -42,34 +45,35 @@ header{
 /*Portfólio*/
 .portfolio{
     
+}
+.port-content{
+    display: flex;
+}
+.texto{
+    background-color: rgb(12, 12, 12);
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+.texto-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-color: #F2F2F0;
+    color: white;
 }
-.title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+input{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: transparent;
 }
-.title h2{
-    color: #1F2024;
+.image{
+    width: 50%;
 }
-.title p{
-    margin-top: 10px;
-    color: #6A6A6C;
+.image img{
+    width: 800px;
+    height: 600px
 }
-.line{
-    width: 60px;
-    height: 0px;
-    border: 1px solid #36BFB1;
-    
-}
-
 
 @media  (max-width: 650px) {
     .titulo{
