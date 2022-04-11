@@ -44,16 +44,20 @@ header{
 
 /*Portfólio*/
 .portfolio{
+    width: 100vw;
+    
     
 }
 .port-content{
     display: flex;
+    height: 100vh;
 }
 .texto{
     background-color: rgb(12, 12, 12);
     padding: 100px;
     display: flex;
     justify-content: center;
+    width: 50%;
 }
 .texto-container{
     display: flex;
@@ -61,34 +65,77 @@ header{
     justify-content: center;
     color: white;
 }
-input{
+input[type=button]{
     width: 100px;
     height: 40px;
     color: white;
     background-color: transparent;
 }
 .image{
+    display: flex;
     width: 50%;
+    
 }
 .image img{
-    width: 800px;
-    height: 600px
+    width: 100vw;
+    height: 100%
 }
 
-@media  (max-width: 650px) {
+@media  (max-width: 750px) {
+
+   
+   
+ 
+    .port-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .texto{
+        padding: 40px;
+       
+    }
+    .image{
+        width: 100%;
+        
+    }
+    .image img{
+        width: 100vw;
+        height: 100%;
+        
+    }
+    .texto{
+        width: 100%;
+    }
+}
+
+@media  (max-width: 450px) {
+
     .titulo{
         font-size: 30px;
         text-align: center;
     }
-    .caixa-frase{
-        height: 100px;
-        
-    }
-    .caixa-frase h3 {
-        font-size: 18px;
-    }
     .title{
         margin-top: 30px;
+    }
+    .port-content{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .texto{
+        padding: 40px;
+        width: 100vw;
+        height: 100vh;
+    }
+    .image{
+        width: 100%;
+    }
+    .image img{
+        width: 100vw;
+        
+    }
+    .texto{
+        width: 100%;
     }
 }
 
