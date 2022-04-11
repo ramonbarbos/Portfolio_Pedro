@@ -14,7 +14,7 @@ body{
 header{
     width: 100vw;
     height: 100vh;
-    background-image: url(img/landscape-tree-nature-forest-rock-wilderness-5577-pxhere.com.jpg);
+    background-image: url(img/DSC_1797.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -134,38 +134,47 @@ section input[type=button]:hover{
 .image{
     display: flex;
     width: 50%;
+    background-image: url(img/landscape-tree-nature-forest-rock-wilderness-5577-pxhere.com.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
-.image img{
-    width: 100vw;
-    height: 100%
-}
 
-@media  (max-width: 750px) {
 
-   
-   
+@media  (max-width: 1300px) {
+
  
     .port-content{
         display: flex;
+        height: 80vh;
+        width: 100vw;
+    }
+    .texto{
+        padding: 100px;
+        width: 50%;  
+    }
+    
+    
+}
+
+
+@media  (max-width: 1000px) {
+
+    .port-content{
+        display: flex;
         flex-direction: column;
+        height: 110vh;
     }
     .texto{
         padding: 40px;
-       
+        width: 100%;
     }
     .image{
         width: 100%;
-        
-    }
-    .image img{
-        width: 100vw;
         height: 100%;
-        
+        background-position: center;
     }
-    .texto{
-        width: 100%;
-    }
+    
 }
 
 @media  (max-width: 450px) {
@@ -184,18 +193,13 @@ section input[type=button]:hover{
     }
     .texto{
         padding: 40px;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
     }
     .image{
         width: 100%;
+        height: 100%;
     }
-    .image img{
-        width: 100vw;
-        
-    }
-    .texto{
-        width: 100%;
-    }
+   
 }
 
