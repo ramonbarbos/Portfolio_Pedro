@@ -46,17 +46,16 @@ header{
 }
 header input[type=button]{
     width: 160px;
-    height: 35px;
+    height: 40px;
     background-color: transparent;
     color: white;
     border-color: white;
     font-size: 15px;
-    font-weight: 500;
     font-family: 'Rajdhani', sans-serif;
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color .3s;
-
+    
 }
 header input[type=button]:hover{
     background-color: white;
@@ -83,7 +82,7 @@ header input[type=button]:hover{
     height: 100vh;
 }
 .texto{
-    background-color: rgb(12, 12, 12);
+    background-color: #0D0D0D;
     padding: 100px;
     display: flex;
     justify-content: center;
@@ -135,12 +134,80 @@ section input[type=button]:hover{
     display: flex;
     width: 50%;
     background-image: url(img/landscape-tree-nature-forest-rock-wilderness-5577-pxhere.com.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     
 }
+/*Portfólio_2*/
+.texto-2{
+    background-color: #F2F2F0;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.port-content-2{
+    display: flex;
+    height: 100vh;
+}
+.texto-container-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.texto-container-2 h2{ 
+    font-family: 'Righteous', cursive;
+    color: #0D0D0D;
 
+}
+.texto-container-2 p{ 
+    font-family: 'Arima Madurai', cursive;
+    color: #0D0D0D;
+    font-weight: 500;
+}
+.port-content-2 input[type=button]{
+    background-color:transparent ;
+    width: 150px;
+    height: 35px;
+    color: #0D0D0D;
+    font-family: 'Rajdhani', sans-serif;
+    border-color: #0D0D0D;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .3s;
 
+}
+.port-content-2 input[type=button]:hover{
+    background-color: #0D0D0D;
+    color: #F2F2F0;
+    font-weight: 700;
+    border-style: none;
+ }
+ .port-content-2 input[type=button]:active{
+    background-color: rgb(21, 255, 0);
+    color: rgb(255, 255, 255);
+    border-style: none;
+ }
+.image-2{
+    display: flex;
+    width: 50%;
+    background-image: url(img/landscape-sea-nature-ocean-mountain-sky-1069951-pxhere.com.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Portfólio_3*/
+.image-3{
+    display: flex;
+    width: 50%;
+    background-image: url(img/hand-girl-woman-trunk-leg-child-1293442-pxhere.com.jpg);
+    background-size: cover;
+    background-position: center;
+}
 @media  (max-width: 1300px) {
 
  
