@@ -1,4 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&display=swap');
 
 *{
     margin: 0;
@@ -19,6 +21,7 @@ header{
 .titulo{
     color: white;
     margin-bottom: 20px;
+    font-family: 'Rajdhani', sans-serif;
 }
 .header-content{
     background-color: rgba(0, 0, 0, 0.46);
@@ -41,6 +44,33 @@ header{
     font-weight: lighter;
     font-size: 30px;
 }
+header input[type=button]{
+    width: 160px;
+    height: 35px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .3s;
+
+}
+header input[type=button]:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.46);
+    font-weight: 700;
+    border-style: none;
+
+ }
+ header input[type=button]:active{
+    background-color: rgb(21, 255, 0);
+    color: rgb(255, 255, 255);
+    border-style: none;
+
+ }
 
 /*Portfólio*/
 .portfolio{
@@ -63,14 +93,44 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    
 }
-input[type=button]{
-    width: 100px;
-    height: 40px;
+.texto-container h2{ 
+    font-family: 'Righteous', cursive;
     color: white;
+
+}
+.texto-container p{ 
+    font-family: 'Arima Madurai', cursive;
+    color: white;
+    font-weight: 500;
+}
+section input[type=button]{
     background-color: transparent;
+    width: 150px;
+    height: 35px;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    border-color: white;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .3s;
+
 }
+section input[type=button]:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.46);
+    font-weight: 700;
+    border-style: none;
+ }
+ section input[type=button]:active{
+    background-color: rgb(21, 255, 0);
+    color: rgb(255, 255, 255);
+    border-style: none;
+ }
 .image{
     display: flex;
     width: 50%;
