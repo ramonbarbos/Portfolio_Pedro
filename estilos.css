@@ -34,7 +34,7 @@ header .carousel-item::before {
 header .carousel-item .container {
     position: absolute;
     text-align: center;
-    left: 30%;
+    left: 10%;
     top: 40%;
     
 }
@@ -65,9 +65,11 @@ header .carousel-indicators .btn{
     background-size: cover;
     border: 3px solid transparent;
     transition: all 0.3s linear;
+    
 }
 header .carousel-indicators .btn.active{
    border-color: white;
+   transform: scale(1.2);
 }
 header .carousel-control-prev,
 header .carousel-control-next{
@@ -91,19 +93,6 @@ header .carousel-control-prev{
 header .carousel-control-next{
     right: -80px;    
 }
-.titulo{
-    color: white;
-    margin-bottom: 20px;
-    font-family: 'Rajdhani', sans-serif;
-}
-.header-content{
-    background-color: rgba(0, 0, 0, 0.46);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .caixa-frase{
     height: 144px;
     display: flex;
@@ -117,32 +106,6 @@ header .carousel-control-next{
     font-weight: lighter;
     font-size: 30px;
 }
-header input[type=button]{
-    width: 160px;
-    height: 40px;
-    background-color: transparent;
-    color: white;
-    border-color: white;
-    font-size: 15px;
-    font-family: 'Rajdhani', sans-serif;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color .3s;
-    border: solid 2px
-}
-header input[type=button]:hover{
-    background-color: white;
-    color: rgba(0, 0, 0, 0.46);
-    font-weight: 700;
-    border-style: none;
-
- }
- header input[type=button]:active{
-    background-color: rgb(21, 255, 0);
-    color: rgb(255, 255, 255);
-    border-style: none;
-
- }
 
 /*Portfólio*/
 .portfolio{
@@ -382,19 +345,33 @@ section input[type=button]:hover{
 
 
 @media  (max-width: 1000px) {
-
+    
+    header .carousel-item .container {
+        left: 0%;
+    }
+    header .carousel-item .container h1{
+        
+        font-size: 100px;
+    }
+    header .carousel-controls{
+        left: 50%;
+        bottom: 40px;
+        z-index: 10;
+        transform: translate(-50%);
+        }
+    header .carousel-control-prev,
+    header .carousel-control-next{
+        display: none;
+    }
     .port-content{
         display: flex;
         flex-direction: column;
         height: 110vh;
-        
-
     }
     .port-content-2{
         display: flex;
         flex-direction: column;
-        height: 110vh;
-       
+        height: 110vh;  
     }
     .texto{
         padding: 40px;
@@ -423,13 +400,24 @@ section input[type=button]:hover{
 }
 
 @media  (max-width: 450px) {
-
-    .titulo{
-        font-size: 30px;
-        text-align: center;
+    header .carousel-item {
+        
+        background-position: center;
+        background-size: cover;
+    
     }
-    .title{
-        margin-top: 30px;
+    header .carousel-item .container {
+        left: 0%;
+        top: 40%;
+    }
+    header .carousel-item .container h1{
+        
+        font-size: 80px;
+    }
+    
+    .caixa-frase h3{
+        font-weight: lighter;
+        font-size: 6vmin;
     }
     .port-content{
         display: flex;
