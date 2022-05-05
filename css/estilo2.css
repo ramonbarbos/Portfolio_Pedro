@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+
+
+:root{
+    --cor-bg-branca: white;
+    --cor-bg-preto: #0D0D0D;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+    
+}
+
+/*Portfólio*/
+.portfolio{
+    width: 100vw;
+
+}
+.port-content{
+    display: flex;
+    height: 100vh;
+}
+.texto{
+    background-color: var(--cor-bg-preto);
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.texto-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.texto-container h2{ 
+    font-family: 'Righteous', cursive;
+    color: var(--cor-bg-branca);
+    font-size: 45px;
+}
+.texto-container p{ 
+    font-family: 'Arima Madurai', cursive;
+    color: var(--cor-bg-branca);
+    font-weight: 500;
+}
+section .button{
+    background-color: transparent;
+    width: 150px;
+    height: 35px;
+    color: var(--cor-bg-branca);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .3s;
+    border: solid 2px;
+    text-decoration: none;
+    display: flex;
+    
+    justify-content: center;
+}
+section .button:hover{
+    background-color: var(--cor-bg-branca);
+    color: rgba(0, 0, 0, 0.46);
+    font-weight: 700;
+    border-style: none;
+ }
+section .button:active{
+    background-color: rgb(21, 255, 0);
+    color: var(--cor-bg-branca);
+    border-style: none;
+ }
+ section .button h1{
+    margin-top: 8px;
+    font-family: 'Rajdhani', sans-serif;
+    border-color: var(--cor-bg-branca);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Rajdhani', sans-serif;
+ }
+.image{
+    display: flex;
+    width: 50%;
+    background-image: url(img/landscape-tree-nature-forest-rock-wilderness-5577-pxhere.com.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+/*Portfólio_2*/
+.texto-2{
+    background-color: var(--cor-bg-branca);
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.port-content-2{
+    display: flex;
+    height: 100vh;
+    
+}
+.texto-container-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.texto-container-2 h2{ 
+    font-family: 'Grandstander', cursive;
+    color: var(--cor-bg-preto);
+    font-size: 45px;
+
+}
+.texto-container-2 p{ 
+    font-family: 'Arima Madurai', cursive;
+    color: var(--cor-bg-preto);
+    font-weight: 500;
+}
+
+.image-2{
+    display: flex;
+    width: 51vw;
+    background-image: url(/img/hand-girl-woman-trunk-leg-child-1293442-pxhere.com.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.port-content-2 .button{
+    background-color: transparent;
+    width: 150px;
+    height: 35px;
+    color: var(--cor-bg-preto);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .3s;
+    border-color: var(--cor-bg-preto);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.port-content-2 .button:hover{
+    background-color: #0D0D0D;
+    color: var(--cor-bg-branca);
+    font-weight: 700;
+    border-style: none;
+ }
+.port-content-2 .button:active{
+    background-color: rgb(21, 255, 0);
+    color: var(--cor-bg-branca);
+    border-style: none;
+ }
+.port-content-2 .button h1{
+    margin-top: 8px;
+    font-family: 'Rajdhani', sans-serif;
+    border-color: var(--cor-bg-branca);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Rajdhani', sans-serif;
+ }
+ 
+/*Responsividades*/
+@media  (min-width: 1300px) {
+
+ 
+    .port-content{
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+    }
+    .port-content-2{
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+    }
+    .texto{
+        padding: 100px;
+        width: 50%;  
+    }
+    .texto-2{
+        padding: 100px;
+        width: 50%;  
+    }
+    
+}
+
+
+@media  (max-width: 1000px) {
+    
+   
+    .port-content{
+        display: flex;
+        flex-direction: column;
+        height: 110vh;
+    }
+    .port-content-2{
+        display: flex;
+        flex-direction: column;
+        height: 110vh;  
+    }
+    .texto{
+        padding: 40px;
+        width: 100%;
+    }
+    .texto-2{
+        padding: 40px;
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+    .image-2{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+    
+}
+
+@media  (max-width: 450px) {
+   
+    
+    
+    .port-content{
+        display: flex;
+        flex-direction: column;
+        height: 110vh;
+    }
+    .port-content-2{
+        display: flex;
+        flex-direction: column;
+        height: 110vh;
+    }
+    .texto{
+        padding: 40px;
+        width: 100%;
+        height: 100vh;
+    }
+    .texto-2{
+        padding: 40px;
+        width: 100%;
+        height: 100vh;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+    }
+    .image-2{
+        width: 100%;
+        height: 100%;
+    }
+    
+
+}
+

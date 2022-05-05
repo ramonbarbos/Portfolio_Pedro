@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+
+
+:root{
+    --cor-bg-branca: white;
+    --cor-bg-preto: #0D0D0D;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+    
+}
+
+header{
+    
+    
+}
+header .carousel-item {
+    min-height: 100vh;
+    background-position: inherit;
+    background-size: cover;
+
+}
+header .carousel-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.174);
+}
+header .carousel-item .container {
+    position: absolute;
+    text-align: center;
+    left: 10%;
+    top: 40%;
+    
+}
+
+header .carousel-controls{
+    
+    position: absolute;
+    position: z;
+    left: 50%;
+    bottom: 40px;
+    z-index: 10;
+    transform: translate(-50%);
+    }
+header .carousel-indicators{
+    position: relative;
+    margin: 0;
+}
+header .carousel-indicators .btn{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid transparent;
+    transition: all 0.3s linear;
+    
+}
+header .carousel-indicators .btn.active{
+   border-color: white;
+   transform: scale(1.2);
+}
+header .carousel-control-prev,
+header .carousel-control-next{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    
+    z-index: 3;
+    top: 50%;
+   transform: translateY(-50%);
+   transition: all 0.3s ease;
+}
+header .carousel-control-prev:hover,
+header .carousel-control-next:hover{
+    box-shadow: 0 0 10px var(--cor-bg-branca);
+}
+header .carousel-control-prev{
+    
+    left: -80px;
+}
+header .carousel-control-next{
+    right: -80px;    
+}
+.container-frase{
+    
+    background-color: var(--cor-bg-preto);
+}
+.caixa-frase{
+    
+    height: 144px;
+    display: flex;
+    
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.caixa-frase h3{
+    font-weight: lighter;
+    font-size: 25px;
+    font-family: 'Arima Madurai', cursive;
+    color: var(--cor-bg-branca);
+}
+/*Slider Recente*/
+.recente{
+    width: 100vw;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    
+}
+.titulo h1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Grandstander', cursive;
+    color: #0D0D0D;
+    font-size: 5vmin;
+}
+.owl-carousel.owl-theme {
+    padding: 0px 100px 0px 100px;
+   margin-bottom: 50px; 
+ }
+.owl-carousel.owl-theme img{
+    border-radius: 05px;
+    height: 550px;
+ }
+
+
+
+
+
+/*Responsividades*/
+@media  (min-width: 1300px) {
+
+
+    .owl-carousel.owl-theme img{
+        
+     }
+    
+}
+
+
+@media  (max-width: 1000px) {
+    
+    header .carousel-item .container {
+        left: 0%;
+    }
+    header .carousel-item .container h1{
+        
+        font-size: 100px;
+    }
+    header .carousel-controls{
+        left: 50%;
+        bottom: 40px;
+        z-index: 10;
+        transform: translate(-50%);
+        }
+    header .carousel-control-prev,
+    header .carousel-control-next{
+        display: none;
+    }
+    .recente{
+        height: 100%;
+    }
+    .owl-carousel.owl-theme{
+        
+    }
+    .owl-carousel.owl-theme img{
+        height: 400px;
+        
+     }
+}
+
+@media  (max-width: 450px) {
+    header .carousel-item {
+        
+        background-position: center;
+        background-size: cover;
+    
+    }
+    header .carousel-item .container {
+        left: 0%;
+        top: 40%;
+    }
+    header .carousel-item .container h1{
+        
+        font-size: 80px;
+    }
+    
+    .caixa-frase h3{
+        font-weight: lighter;
+        font-size: 6vmin;
+    }
+    .recente{
+        height: 100%;
+    }
+    .owl-carousel.owl-theme{
+        padding: 0px 70px 0px 70px;
+    }
+    .owl-carousel.owl-theme img{
+        height: 350px;
+       
+        
+     }
+    
+}
+
