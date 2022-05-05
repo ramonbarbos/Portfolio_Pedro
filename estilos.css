@@ -3,13 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     overflow-x: hidden;
+    
 }
 
 header{
@@ -38,11 +42,7 @@ header .carousel-item .container {
     top: 40%;
     
 }
-header .carousel-item .container h1{
-    color: rgb(255, 255, 255);
-    font-family: 'Passion One', cursive;
-    font-size: 120px;
-}
+
 header .carousel-controls{
     
     position: absolute;
@@ -93,7 +93,11 @@ header .carousel-control-prev{
 header .carousel-control-next{
     right: -80px;    
 }
+.container-frase{
+    background-color: #0D0D0D;
+}
 .caixa-frase{
+    
     height: 144px;
     display: flex;
     justify-content: center;
@@ -104,14 +108,40 @@ header .carousel-control-next{
 }
 .caixa-frase h3{
     font-weight: lighter;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: 'Arima Madurai', cursive;
+    color: white;
 }
-
+/*Slider Recente*/
+.recente{
+    width: 100vw;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    
+}
+.titulo h1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Grandstander', cursive;
+    color: #0D0D0D;
+    font-size: 5vmin;
+}
+.owl-carousel.owl-theme {
+    padding: 0px 100px 0px 100px;
+   margin-bottom: 50px; 
+ }
+.owl-carousel.owl-theme img{
+    border-radius: 05px;
+    height: 550px;
+ }
 /*Portfólio*/
 .portfolio{
     width: 100vw;
-    
-    
+
 }
 .port-content{
     display: flex;
@@ -132,12 +162,12 @@ header .carousel-control-next{
 }
 .texto-container h2{ 
     font-family: 'Righteous', cursive;
-    color: #F2F2F0;
+    color: white;
     font-size: 45px;
 }
 .texto-container p{ 
     font-family: 'Arima Madurai', cursive;
-    color: #F2F2F0;
+    color: white;
     font-weight: 500;
 }
 section .button{
@@ -183,7 +213,7 @@ section .button:active{
 }
 /*Portfólio_2*/
 .texto-2{
-    background-color: #F2F2F0;
+    background-color: white;
     padding: 90px;
     display: flex;
     justify-content: center;
@@ -201,7 +231,7 @@ section .button:active{
     
 }
 .texto-container-2 h2{ 
-    font-family: 'Righteous', cursive;
+    font-family: 'Grandstander', cursive;
     color: #0D0D0D;
     font-size: 45px;
 
@@ -228,11 +258,9 @@ section .button:active{
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color .3s;
-    
     border-color: #0D0D0D;
     text-decoration: none;
     display: flex;
-    
     justify-content: center;
 }
 .port-content-2 .button:hover{
@@ -266,66 +294,76 @@ section .button:active{
 
 /*Dicas*/
 .dicas{
-    width: 100vw;
-    height: 60vh;
+  
+}
+.dicas .carousel-item {
+    min-height: 85vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.dicas .carousel-item .caixa1 {
     display: flex;
     flex-direction: column;
+    width: 70vw ;
+    height: 20vh;
+    background-color: #0d0d0da3;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}.dicas .titulo{
+    text-align: center;
+    font-family: 'Arima Madurai', cursive;
+    
+}
+.dicas .titulo h1{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family: 'Grandstander', cursive;
+    color: white;
+    font-size: 5vmin;
+}
+
+.text{
+    text-align: center;
+    justify-content: center;
+    color: white; 
+    margin: 50px;
+}
+
+.dicas .carousel-indicators .btn{
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid transparent;
+    transition: all 0.3s linear;
+    
+}
+.final{
+    width: 100vw;
+    height: 45px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/landscape-tree-forest-cloud-black-and-white-wood-20712-pxhere.com.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.dicas-container{
-   text-align: center;
-}
-.dicas-container h2{
-    font-family: 'Righteous', cursive;
-    color: #F2F2F0;
-    font-size: 35px;
-
-}
-.dicas-container p{
-    font-family: 'Arima Madurai', cursive;
-    color: #F2F2F0;
-    font-weight: 700;
-}
-.dicas-container input[type=button]{
-    background-color: transparent;
-    width: 150px;
-    height: 40px;
-    color: white;
-    font-family: 'Rajdhani', sans-serif;
-    border-color: white;
-    font-size: 15px;
-    font-weight: 500;
-    font-family: 'Rajdhani', sans-serif;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color .3s;
-    border: solid 3px
-}
-.dicas-container input[type=button]:hover{
+    flex-direction: column;
     background-color: white;
-    color: rgba(0, 0, 0, 0.46);
-    font-weight: 700;
-    border-style: none;
- }
-.dicas-container input[type=button]:active{
-    background-color: rgb(21, 255, 0);
-    color: rgb(255, 255, 255);
-    border-style: none;
- }
-
-/*Slider*/
-.owl-carousel.owl-theme img{
-    width: 100px; 
-    height:300px;
     margin-top: 10px;
-    margin-bottom: 10px;
+}
+.caixa-final{
     
- }
-
+    
+    height: 1px;
+    
+}
+.final a{
+    text-decoration: none;
+    color: #0D0D0D;
+}
 
 
 /*Responsividades*/
@@ -334,12 +372,12 @@ section .button:active{
  
     .port-content{
         display: flex;
-        height: 80vh;
+        height: 100vh;
         width: 100vw;
     }
     .port-content-2{
         display: flex;
-        height: 80vh;
+        height: 100vh;
         width: 100vw;
     }
     .texto{
@@ -351,11 +389,7 @@ section .button:active{
         width: 50%;  
     }
     .owl-carousel.owl-theme img{
-        width: 300px; 
-        height:400px;
-        margin-top: 10px;
-         margin-bottom: 10px;
-
+        
      }
     
 }
@@ -413,12 +447,15 @@ section .button:active{
         height: 100%;
         background-position: center;
     }
+    .recente{
+        height: 100%;
+    }
+    .owl-carousel.owl-theme{
+        
+    }
     .owl-carousel.owl-theme img{
-        width: 50px; 
-        height:450px;
-        margin-top: 10px;
-         margin-bottom: 10px;
-
+        height: 400px;
+        
      }
 }
 
@@ -470,12 +507,32 @@ section .button:active{
         width: 100%;
         height: 100%;
     }
+    .recente{
+        
+        height: 100%;
+    }
+    
+    .titulo h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    
+    .owl-carousel.owl-theme{
+        
+        margin-bottom: 0px; 
+        padding: 0px 100px 0px 100px;
+        
+    }
     .owl-carousel.owl-theme img{
-        width: 300px; 
-        height: 300px;
-        margin-top: 30px;
-         margin-bottom: 0px;
-
+        height: 350px;
+        
      }
+     .dicas .carousel-item .caixa1 {
+        width: 70vw ;
+        height: 50vh;
+        top: 20%;
+        left: 12.5%;
+    }
 }
 

@@ -1,23 +1,21 @@
 $('.owl-carousel').owlCarousel({
-    loop:true,
+    
     margin:3,
     nav:false,
-    center:true,
     items:1,
     autoplay:true,
     autoplayTimeout:2000,
-    autoplayHoverPause:true,
-    animateOut: 'slideOutDown',
+    autoplayHoverPause:false,
     animateIn: 'flipInX',
     responsive:{
         0:{
-            items:2
+            items:1
         },
         600:{
             items:3
         },
         1000:{
-            items:5
+            items:3
         },
         2000:{
             items:7
