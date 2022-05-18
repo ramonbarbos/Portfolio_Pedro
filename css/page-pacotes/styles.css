@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+:root{
+    --cor-bg-branca: white;
+    --cor-bg-preto: #0D0D0D;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+    
+}
+
+header{}
+header .header-content{
+    width: 100vw;
+    height: 80vh;
+    background-image: url('img/3.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+section{
+    padding: 60px;
+
+}
+section .section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+}
+.titulo h5{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    font-size: 4vmin;
+    font-family: 'Grandstander', cursive;
+}
+
+section .caixa{
+    font-family: 'Arima Madurai', cursive;
+    
+    text-align: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    height: 100%;
+    width: 100%;
+}
+.caixa h6{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 3vmin;
+    font-family: 'Grandstander', cursive;
+}
+.caixa p{
+    margin-bottom: 60px ;
+}
+
+
+.agenda{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.agenda .info{
+    text-decoration: none;
+    color: #0D0D0D;
+    margin-bottom: 10px;
+    font-family: 'Grandstander', cursive;
+   
+}
+.agenda .btn-wpp{
+    color: green;
+    margin-bottom: 10px;
+}
+.agenda .btn-wpp:hover{
+    color: rgb(255, 187, 0);
+}
+.agenda .btn-wpp .material-icons{
+    font-size: 35px;
+}
+
+
+
+/*Responsividades*/
+@media  (min-width: 1300px) {
+
+    
+}
+
+
+@media  (max-width: 1000px) {
+    
+   
+    
+}
+
+@media  (max-width: 450px) {
+    header .header-content{
+        
+        height: 85vh;
+        
+    
+    }
+    section{
+        padding: 10px;
+    
+    }
+    section .section-content{
+        display: flex;
+        height: 100vh;
+    }
+    .titulo h5{
+        margin-top: 20px;
+        font-size: 5vmin;
+    }
+    .caixa{
+        padding: 10px;
+        height: 100%;
+    }
+    .caixa h6{
+        font-size: 5vmin;
+    }
+    .caixa p{
+        font-size: 4vmin;
+    }
+
+}
