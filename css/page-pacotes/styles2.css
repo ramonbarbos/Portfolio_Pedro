@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+:root{
+    --cor-bg-branca: white;
+    --cor-bg-preto: #0D0D0D;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+    
+}
+
+.pacote{
+    height: 100vh;
+    padding: 60px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+.pacote-content{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: 20px;
+}
+.mini{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+.mini2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin-left: 20px;
+}
+.mini3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin-left: 20px;
+
+}
+ h5{
+    font-size: 3vmin;
+    font-family: 'Grandstander', cursive;
+}
+.text{
+    height: 100px;
+    font-family: 'Arima Madurai', cursive;
+
+}
+ p{
+    text-align: center;
+}
+.img{
+    
+    background-size: cover;
+    background-position: top;
+    width: 20vw;
+    height: 40vh;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+ h6{
+    font-size: 2.5vmin;
+    font-family: 'Grandstander', cursive;
+}
+
+ ul{
+    margin: 20px 40px 0 50px;
+    justify-content: flex-start;
+}
+ li{
+    font-size: 2.2vmin;
+    font-family: 'Grandstander', cursive;
+}
+
+
+/*Responsividades*/
+@media  (min-width: 1300px) {
+   
+    
+}
+
+
+@media  (max-width: 900px) {
+    .pacote{
+        height: 100vh;
+        padding: 60px 0px 80px 0px;
+    }
+    .text{
+        margin-bottom: 30px;
+    }
+    .row{
+        flex-direction: column;
+        align-items:initial;
+    }
+    .pacote-content{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        
+    }
+    .mini3,
+    .mini2,
+    .mini{
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+    .mini2 p,
+    .mini3 p,
+    .mini p{
+        
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    .mini2{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .mini3{ 
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .text{
+        height: 10px;
+    }
+    .img{
+        
+        width: 50vw;
+        height: 60vh;
+    }
+    ul{
+        margin: 20px 60px 10px 60px;
+        justify-content: center;
+    }
+}
+
+@media  (max-width: 450px) {
+    .pacote{
+        height: 100vh;
+        padding: 20px 0px 20px 0px;
+    }
+    .pacote-content{
+        margin: auto;
+        padding: 10px;
+        
+    }
+    .mini3,
+    .mini2,
+    .mini{
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    h5{
+        font-size: 5vmin;
+        
+    }
+    .img{
+        margin-top: 100px;
+        width: 90vw;
+        height: 50vh;
+    }
+    h6{
+        font-size: 4.5vmin;
+        font-family: 'Grandstander', cursive;
+    }
+    ul{
+        margin: 20px 20px 10px 20px;
+        justify-content: center;
+    }
+    li{
+        font-size: 3.5vmin;
+    }
+}

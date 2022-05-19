@@ -31,15 +31,15 @@ header .header-content{
     background-size: cover;
 
 }
-section{
-    padding: 60px;
+.aviso{
+    padding: 60px ;
+    height: 100vh;
 
 }
-section .section-content{
+.aviso .section-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70vh;
 }
 .titulo{
     display: flex;
@@ -53,7 +53,7 @@ section .section-content{
     font-family: 'Grandstander', cursive;
 }
 
-section .caixa{
+.aviso .caixa{
     font-family: 'Arima Madurai', cursive;
     
     text-align: center;
@@ -88,7 +88,8 @@ section .caixa{
 }
 .agenda .btn-wpp{
     color: green;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 5px;
 }
 .agenda .btn-wpp:hover{
     color: rgb(255, 187, 0);
@@ -119,11 +120,11 @@ section .caixa{
         
     
     }
-    section{
+    .aviso{
         padding: 10px;
     
     }
-    section .section-content{
+    .section-content{
         display: flex;
         height: 100vh;
     }
@@ -137,9 +138,11 @@ section .caixa{
     }
     .caixa h6{
         font-size: 5vmin;
+        margin-top: 10px;
     }
     .caixa p{
         font-size: 4vmin;
+        margin-bottom: 20px;
     }
 
 }
