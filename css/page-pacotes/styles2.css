@@ -117,6 +117,7 @@ body{
         display: flex;
         flex-direction: column;
         padding: 30px;
+
         
     }
     .mini3,
@@ -157,18 +158,35 @@ body{
 @media  (max-width: 450px) {
     .pacote{
         height: 100vh;
-        padding: 20px 0px 20px 0px;
+         padding: 0px;
+    }
+    .row{
+        display: block;
+        flex-direction: column;
+        align-items: center; 
     }
     .pacote-content{
-        margin: auto;
-        padding: 10px;
+        display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
         
     }
     .mini3,
-    .mini2,
-    .mini{
+    .mini2{
         padding: 10px;
-        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    .mini{
+        display: flex;
+        flex-direction: column;
+         align-items: center;
+         padding: 0px;
+
     }
     h5{
         font-size: 5vmin;
@@ -176,7 +194,7 @@ body{
     }
     .img{
         margin-top: 100px;
-        width: 90vw;
+        width: 80vw;
         height: 50vh;
     }
     h6{
