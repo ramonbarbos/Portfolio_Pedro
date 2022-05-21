@@ -109,19 +109,29 @@ header .header-content{
 
 @media  (max-width: 1000px) {
     
-   
+    header .header-content{
+        
+        height: 85vh;
+        padding:0px ;
     
+    }
+    .aviso{
+        padding: 0px;
+        height: 100%;
+    
+    }
 }
 
 @media  (max-width: 450px) {
     header .header-content{
         
         height: 85vh;
-        
+        padding:0px ;
     
     }
     .aviso{
         padding: 0px;
+        
     
     }
     .section-content{
@@ -133,8 +143,8 @@ header .header-content{
         font-size: 5vmin;
     }
     .caixa{
-        padding: 30px;
-        height: 100%;
+        padding: 20px;
+        height: 60%;
     }
     .caixa h6{
         font-size: 5vmin;

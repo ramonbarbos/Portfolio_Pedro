@@ -25,8 +25,9 @@ body{
 .pacote{
     height: 100vh;
     padding: 60px;
+    width: 100vw;
 }
-.row{
+.caixaa{
     display: flex;
     flex-direction: row;
     align-items: center;    
@@ -99,17 +100,21 @@ body{
    
     
 }
-
+.pacote{
+    height: 100vh;
+    padding: 10px 0px 80px 0px;
+}
 
 @media  (max-width: 900px) {
     .pacote{
         height: 100vh;
-        padding: 60px 0px 80px 0px;
+        padding: 10px 0px 80px 0px;
     }
     .text{
         margin-bottom: 30px;
     }
-    .row{
+    .caixaa{
+        
         flex-direction: column;
         align-items:initial;
     }
@@ -157,43 +162,38 @@ body{
 
 @media  (max-width: 450px) {
     .pacote{
-        height: 100vh;
+        height: 100%;
          padding: 0px;
-    }
-    .row{
-        display: block;
-        flex-direction: column;
-        align-items: center; 
-    }
-    .pacote-content{
-        display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0px;
-        
-    }
-    .mini3,
-    .mini2{
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-        margin-left: 0px;
-    }
-    .mini{
-        display: flex;
-        flex-direction: column;
-         align-items: center;
-         padding: 0px;
+        width: 100vw;
 
     }
-    h5{
-        font-size: 5vmin;
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+    }
+    .pacote-content{
+        
+        width: 100vw;
+        padding: 0px;
         
     }
+    
+    .text{
+        width: 300px;
+    }
+    .mini3,
+    .mini2,
+    .mini {
+        padding: 0px;
+    }
+    
+    h5{
+        font-size: 5vmin;  
+    }
     .img{
-        margin-top: 100px;
+        margin-top: 80px;
         width: 80vw;
         height: 50vh;
     }

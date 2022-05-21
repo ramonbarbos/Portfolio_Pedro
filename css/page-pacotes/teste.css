@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+:root{
+    --cor-bg-branca: white;
+    --cor-bg-preto: #0D0D0D;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+    
+}
+
+.pacote{
+    height: 100vh;
+    padding: 60px;
+    width: 100vw;
+}
+.caixaa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+.pacote-content{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: 20px;
+}
+.mini3,
+.mini2,
+.mini{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+
+@media  (max-width: 450px) {
+    .pacote{
+        height: 100%;
+         padding: 0px;
+        width: 100vw;
+
+    }
+    .caixaa{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .pacote-content{
+        
+        width: 100vw;
+        padding: 0px;
+        
+    }
+    
+    .text{
+        width: 300px;
+    }
+    .mini3,
+    .mini2,
+    .mini {
+        padding: 0px;
+    }
+    
+   
+}
