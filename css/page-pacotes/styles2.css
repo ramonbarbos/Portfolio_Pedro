@@ -35,28 +35,29 @@ body{
 .pacote-content{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
     width: 100vw;
-    padding: 20px;
 }
 .mini{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
+    padding: 20px;
+
 }
 .mini2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
-    margin-left: 20px;
+    padding: 20px;
+
 }
 .mini3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
-    margin-left: 20px;
+    padding: 20px;
 
 }
  h5{
@@ -64,9 +65,9 @@ body{
     font-family: 'Grandstander', cursive;
 }
 .text{
+    width: 260px;
     height: 100px;
     font-family: 'Arima Madurai', cursive;
-
 }
  p{
     text-align: center;
@@ -86,7 +87,7 @@ body{
 }
 
  ul{
-    margin: 20px 40px 0 50px;
+    width: 220px;
     justify-content: flex-start;
 }
  li{
@@ -96,14 +97,22 @@ body{
 
 
 /*Responsividades*/
-@media  (min-width: 1300px) {
-   
-    
-}
+@media  (min-width: 1500px) {
+
 .pacote{
     height: 100vh;
-    padding: 10px 0px 80px 0px;
+    padding: 50px 60px 80px 60px;
 }
+.text{
+   width: 500px; 
+}
+ul{
+    width: 350px;
+    justify-content: flex-start;
+
+}  
+}
+
 
 @media  (max-width: 900px) {
     .pacote{
@@ -111,7 +120,9 @@ body{
         padding: 10px 0px 80px 0px;
     }
     .text{
-        margin-bottom: 30px;
+        width: 50vw;
+         height: 100px;
+         margin-bottom: 50px;
     }
     .caixaa{
         
@@ -155,7 +166,8 @@ body{
         height: 60vh;
     }
     ul{
-        margin: 20px 60px 10px 60px;
+     width: 50vw;
+
         justify-content: center;
     }
 }
@@ -167,7 +179,7 @@ body{
         width: 100vw;
 
     }
-    .row{
+    .caixaa{
         display: flex;
         flex-direction: column;
         align-items: center; 
@@ -182,6 +194,8 @@ body{
     
     .text{
         width: 300px;
+        height: 50px;
+
     }
     .mini3,
     .mini2,
@@ -193,7 +207,7 @@ body{
         font-size: 5vmin;  
     }
     .img{
-        margin-top: 80px;
+        
         width: 80vw;
         height: 50vh;
     }
@@ -201,9 +215,10 @@ body{
         font-size: 4.5vmin;
         font-family: 'Grandstander', cursive;
     }
+    
     ul{
-        margin: 20px 20px 10px 20px;
-        justify-content: center;
+        width: 80vw;
+        
     }
     li{
         font-size: 3.5vmin;
